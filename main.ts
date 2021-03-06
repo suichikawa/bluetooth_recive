@@ -1,5 +1,5 @@
 bluetooth.onBluetoothConnected(function () {
-    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.Square)
 })
 bluetooth.onBluetoothDisconnected(function () {
     basic.showIcon(IconNames.No)
@@ -22,7 +22,7 @@ bluetooth.onUartDataReceived(serial.delimiters(Delimiters.NewLine), function () 
         basic.showLeds(`
             . . . . .
             . . . . .
-            . . # . .
+            . . . . .
             . . . . .
             . . . . .
             `)
